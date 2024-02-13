@@ -1,0 +1,289 @@
+body{
+    scroll-behavior: smooth;
+}
+.nav{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 100vh; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: white;
+    height: 100px;
+    position: relative;
+}
+.navbarScroll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: transparent;
+    height: 100px;
+    position: relative;
+}
+.logo img{
+    width: 150px;
+}
+.navItems ul,
+.toggle ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+.navItems ul li a,
+.toggle ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+    letter-spacing: 4px;
+}
+.navbar .navItems ul li a,
+.navbar .toggle ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s;
+}
+.navItems ul li a:hover,
+.toggle ul li a:hover{
+    color: rgb(206, 134, 0);
+}
+.navbarScroll .icon{
+
+}
+.icon{
+    color: white;
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.icon i:hover {
+    color: rgb(0, 3, 84);
+    transition: 0.3s;
+
+}
+.navbar .icon{
+    color: black;
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+.bar{
+    display: none;
+    font-size: 25px;
+
+}
+
+/* .We_Are{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 63%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.We_Are p{
+    color: white;
+    font-size: 25px;
+}
+.We_Are h1{
+    color: white;
+    font-size: 75px; 
+}
+.We_Are .btn button{
+    margin: 0 7px;
+    color: white;
+    font-size: 15px;
+    padding: 8px 9px;
+    border: 1px solid white;
+    background-color: transparent;
+    letter-spacing: 3px;
+    position: relative;
+}
+.We_Are .btn button p{
+    font-size: 15px;
+    z-index: 10;
+}
+.We_Are .btn button::before{
+    content: " ";
+    background-color: rgb(210, 137, 0);
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom:0;
+    transition: 0.3s;
+}
+.We_Are .btn button:hover::before{
+    height: 100%;
+    z-index: -1;
+    border: 1px solid orange;
+}
+
+.FaChevronDown{
+    position: relative;
+}
+.FaChevronDown a{
+    left: -20px;
+    position: absolute;
+    transition: 0.3s;
+    font-size: 44px;
+    font-weight: 900;
+    color: white;
+    animation-name: GoChevronDown;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes GoChevronDown {
+    0% ,100%{
+        top: 10px;
+    }
+    25%{
+        top: 5px;
+    }
+    50%{
+        top: 10px;
+    }
+   75%{
+        top: 15px;
+    }
+} */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+
+@media screen and (max-width:912px) {
+    .logo img{
+        width: 100px;
+    }
+    .navItems ul li a,
+    .toggle ul li a{
+        font-size: 20px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .navbar .icon{
+        font-size: 20px;
+    }
+   
+
+}
+@media screen and (max-width:768px) {
+    .navbar{
+        height: 80px;
+    }
+    .bar{
+        display: block;
+    }
+    .navItems{
+        z-index: 2;
+        top: 80px;
+        left: 0%;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+        transition: 0.5s;
+        animation-name: navbar;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        transform: rotateY(90deg);
+        background-color: transparent;
+         
+        
+    }
+    @keyframes  navbar {
+           
+            0%{
+                background-image: linear-gradient(to top,transparent ,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.663),rgba(0, 0, 0, 0.484),transparent);
+                transform: rotateY(0deg) rotateX(15deg);
+
+            }
+            25%{
+                transform: rotateY(45deg) rotateX(15deg);
+            }
+            50%{
+                transform: rotateY(90deg) rotateX(15deg);
+             }
+             75%{
+                transform: rotateY(125deg) rotateX(15deg);
+             }
+            100%{
+                transform: rotateY(180deg) rotateX(15deg); 
+
+            }
+            
+
+    }
+    .toggle{
+
+        top: 80px;
+        left:0%;
+        position: absolute;
+        background-color: transparent;
+        transition: 0.5s;
+        background-image: linear-gradient(to top,transparent ,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.663),rgba(0, 0, 0, 0.484),transparent);
+        width: 100%;
+        height: calc(100vh - 80px);
+        transition: 0.5s;
+        animation-name: toggle;
+        animation-duration:1.2s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+
+    }
+    @keyframes  toggle {
+
+        
+        0%{
+            transform: rotateY(180deg) rotateX(15deg);
+        }
+        25%{
+            transform: rotateY(125deg) rotateX(15deg);
+        }
+        50%{
+            transform: rotateY(90deg) rotateX(15deg);
+         }
+         75%{
+            transform: rotateY(45deg) rotateX(15deg);
+            background-image: linear-gradient(to top,transparent ,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.663),rgba(0, 0, 0, 0.484),transparent);
+         }
+        100%{
+            transform: rotateY(0deg) rotateX(15deg);
+            background-image: linear-gradient(to top,transparent ,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.663),rgba(0, 0, 0, 0.484),transparent);
+
+
+        }
+    }
+    .navItems ul,
+    .toggle ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        height: calc(100vh - 80px);
+    }
+}
