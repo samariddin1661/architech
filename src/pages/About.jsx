@@ -43,6 +43,40 @@ But the pretty milkmaid was much too vexed to make any answer. She picked up the
           </div>
         </div>
     </div>
+    <hr/>
+
+
+    <div className={styles.about_contaner}>
+    <div className={styles.about_title}>
+      <p className={styles.about_title_p1}>WE ARE MULTIFACETED AND GIFTED</p>
+      <hr/>
+      <p className={styles.about_title_p2}>At the base of the mainmast, full beneath the doubloon and the flame, the Parsee was kneeling in Ahab’s front, but with his head bowed away from him while near by but not yet have we solved the incantation of this whiteness, and learned why it appeals with such power.<br/>
+
+From the arched and overhanging rigging, where they had just been engaged securing a spar, a number of the seamen, arrested by the glare, now cohered together, and hung pendulous, like a knot of numbed wasps from a drooping big and swirly thing.</p>
+    </div>
+
+
+    <div className={styles.about_box}>
+      <b>      
+        <p>BRANDING</p>
+        <div className={styles.about_box1}></div>
+      </b>
+      <b>
+        <p>VIDEO EDITION</p>
+        <div className={styles.about_box2}></div>
+      </b>
+      <b>
+        <p>E-COMMERCE</p>
+        <div className={styles.about_box3}></div>
+      </b>
+      <b>
+        <p>E-COMMERCE</p>
+        <div className={styles.about_box4}></div>
+      </b>
+      
+    </div>
+    </div>
+
     </div>
   )
 }

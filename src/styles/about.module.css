@@ -129,7 +129,77 @@
     }
 }
 
-
+.about_contaner{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}
+.about_title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 700px;
+    width: 100%;
+}
+.about_title .about_title_p1{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #34383a;
+}
+.about_title .about_title_p2{
+    font-size: 15px;
+    color: #44494c;
+    font-family: 'Hind', sans-serif;
+    line-height: 25px;
+}
+.about_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about_box1,.about_box2,.about_box3,.about_box4{
+    width: 500px;
+    height: 8px;
+    background-color:#8d8d8d;
+    position: relative;
+}
+.about_box1::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    width: 400px;
+    height: 8px;
+    background-color: #34383a;
+}
+.about_box2::after{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 450px;
+    height: 8px;
+    background-color: #34383a;
+}
+.about_box3::after{
+    left: 0;
+    bottom: 0;
+    content: " ";
+    position: absolute;
+    width: 475px;
+    height: 8px;
+    background-color: #34383a;
+}
+.about_box4::after{
+    left: 0;
+    bottom: 0;
+    content: " ";
+    position: absolute;
+    width: 375px;
+    height: 8px;
+    background-color: #34383a;
+}
 
 
 @media screen and (max-width:912px) {
@@ -138,6 +208,10 @@
         flex-direction: column;
         gap: 40px;
     }
+    .abuotsection h1{
+        font-size: 28px;
+    }
+
     .We_Are p{
         font-size: 25px;
     }
@@ -151,9 +225,29 @@
         font-size: 15px;
         letter-spacing: 3px;
     }
+
+
+
+    .about_box1,.about_box2,.about_box3,.about_box4{
+        width: 400px;
+    }
+    .about_box1::after{
+        width: 320px;
+    }
+    .about_box2::after{
+        width: 360px;
+    }
+    .about_box3::after{
+        width: 380px;
+    }
+    .about_box4::after{
+        width: 300px;
+    }
 }
 @media screen and (max-width:768px) {
-
+    .abuotsection h1{
+        font-size: 28px;
+    }
     .We_Are{
         z-index: 1;
     }
@@ -214,6 +308,33 @@
     }
     .bringingtext img{
         width: 330px;
+    }
+
+    .about_contaner{
+       flex-direction: column;
+    }
+    .about_title .about_title_p1{
+        font-size: 15px;
+    }
+    .about_box b p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .about_box1,.about_box2,.about_box3,.about_box4{
+        width: 300px;
+    }
+    .about_box1::after{
+        width: 240px;
+    }
+    .about_box2::after{
+        width: 270px;
+    }
+    .about_box3::after{
+        width: 285px;
+    }
+    .about_box4::after{
+        width: 225px;
     }
 
 }
