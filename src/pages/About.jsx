@@ -1,6 +1,12 @@
 import React from 'react'
 import styles from '../styles/about.module.css'
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown,FaRegHeart } from "react-icons/fa";
+import { CgTime } from "react-icons/cg";
+import { VscBeaker } from "react-icons/vsc";
+import { MdFilterDrama } from "react-icons/md";
+
+
+
 
 
 const about = () => {
@@ -77,6 +83,37 @@ From the arched and overhanging rigging, where they had just been engaged securi
     </div>
     </div>
 
+
+    <div className={styles.LATEST}>
+        <img src="https://www.pirenko-themes.com/hook/architecture/wp-content/uploads/sites/19/2016/06/draken.jpg" alt="img" />
+        <div className={styles.latestachievments}>
+          <h1>LATEST ACHIEVMENTS</h1>
+          <p>The leading matter of it requires to be still further and more familiarly enlarged upon.
+Moreover to take away any incredulity which a profound expertise.</p>
+        </div>
+        <div className={styles.latest_statistics}>
+          <div className={styles.statistics}>
+                  <i><CgTime /></i>
+                  <h1>234</h1>
+                  <p>TIMELY DELIVERIES</p>
+          </div>
+          <div className={styles.statistics}>
+                  <i><VscBeaker /></i>
+                  <h1>234</h1>
+                  <p>UNSOLVED MISTERIES</p>
+          </div>
+          <div className={styles.statistics}>
+                  <i><FaRegHeart /></i>
+                  <h1>455</h1>
+                  <p>BIG HEARBEATS</p>
+          </div>
+          <div className={styles.statistics}>
+                  <i><MdFilterDrama /></i>
+                  <h1>467</h1>
+                  <p>CLOUD WORKERS</p>
+          </div>
+        </div>
+    </div>
     </div>
   )
 }

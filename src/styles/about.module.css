@@ -202,6 +202,64 @@
 }
 
 
+.LATEST{
+    position: relative;
+}
+.LATEST img{
+    width: 100%;
+    height: 600px;
+
+}
+.latestachievments{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 50%;
+    text-align: center;
+}
+.latestachievments h1{
+    font-size: 40px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+}
+.latestachievments p{
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    max-width: 660px;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+}
+.latest_statistics{
+    display: flex;
+    position: absolute;     
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 66%;
+    left: 50%;
+
+}
+.statistics{
+    text-align: center;
+}
+
+.latest_statistics .statistics i{
+    font-size: 55px;
+    color: white;
+}
+.latest_statistics .statistics h1{
+    font-size:48px;
+    color: white;
+}
+.latest_statistics .statistics p{
+    font-size:21px;
+    color: white;
+}
+
+
 @media screen and (max-width:912px) {
     .bringing{
         display: flex;
