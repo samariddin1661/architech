@@ -1,15 +1,38 @@
-import React from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import styles from '../styles/about.module.css'
 import { FaChevronDown,FaRegHeart } from "react-icons/fa";
 import { CgTime } from "react-icons/cg";
 import { VscBeaker } from "react-icons/vsc";
 import { MdFilterDrama } from "react-icons/md";
+import ProgressBar from "../components/ProgressBar"
+import Counter from '../components/Counter';
 
 
 
 
 
-const about = () => {
+const About = () => {
+  const [latest,setLatest] = useState(false)
+  const ref = useRef();
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      if(position > ref.current.offsetTop - 200){
+        setLatest(true)
+      }
+  };
+  
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+  
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+
+
+  
+ 
+
   return (
     
     <div>
@@ -63,28 +86,15 @@ From the arched and overhanging rigging, where they had just been engaged securi
 
 
     <div className={styles.about_box}>
-      <b>      
-        <p>BRANDING</p>
-        <div className={styles.about_box1}></div>
-      </b>
-      <b>
-        <p>VIDEO EDITION</p>
-        <div className={styles.about_box2}></div>
-      </b>
-      <b>
-        <p>E-COMMERCE</p>
-        <div className={styles.about_box3}></div>
-      </b>
-      <b>
-        <p>E-COMMERCE</p>
-        <div className={styles.about_box4}></div>
-      </b>
+     
+
+      <ProgressBar/>
       
     </div>
     </div>
 
 
-    <div className={styles.LATEST}>
+    <div className={styles.LATEST} ref={ref}>
         <img src="https://www.pirenko-themes.com/hook/architecture/wp-content/uploads/sites/19/2016/06/draken.jpg" alt="img" />
         <div className={styles.latestachievments}>
           <h1>LATEST ACHIEVMENTS</h1>
@@ -94,22 +104,30 @@ Moreover to take away any incredulity which a profound expertise.</p>
         <div className={styles.latest_statistics}>
           <div className={styles.statistics}>
                   <i><CgTime /></i>
-                  <h1>234</h1>
+                  <h1>
+                    <Counter startNum={latest ? 0 : 0} endNum={latest ? 945 : 0}/>
+                  </h1>
                   <p>TIMELY DELIVERIES</p>
           </div>
           <div className={styles.statistics}>
                   <i><VscBeaker /></i>
-                  <h1>234</h1>
+                  <h1>
+                  <Counter startNum={latest ? 124 : 0} endNum={latest ? 0 : 0}/>
+                  </h1>
                   <p>UNSOLVED MISTERIES</p>
           </div>
           <div className={styles.statistics}>
                   <i><FaRegHeart /></i>
-                  <h1>455</h1>
+                  <h1>
+                  <Counter startNum={latest ? 0 : 0} endNum={latest ? 980 : 0}/>
+                  </h1>
                   <p>BIG HEARBEATS</p>
           </div>
           <div className={styles.statistics}>
                   <i><MdFilterDrama /></i>
-                  <h1>467</h1>
+                  <h1>
+                  <Counter startNum={latest ? 0 : 0} endNum={latest ? 876 : 0}/>
+                  </h1>
                   <p>CLOUD WORKERS</p>
           </div>
         </div>
@@ -118,4 +136,4 @@ Moreover to take away any incredulity which a profound expertise.</p>
   )
 }
 
-export default about
+export default About

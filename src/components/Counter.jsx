@@ -4,12 +4,13 @@ import React from 'react'
 import CountUp from 'react-countup';
 
 
-const Counter = () => {
+const Counter = (props) => {
+  const {startNum, endNum} = props
   return (
     <div>
         <CountUp 
-        end={100} 
-        start={1}
+        end={endNum} 
+        start={startNum}
         duration={10}
         />
     </div>
