@@ -13,11 +13,16 @@ import Counter from '../components/Counter';
 
 const About = () => {
   const [latest,setLatest] = useState(false)
-  const ref = useRef();
+  const [count,setCount] = useState(false)
+  const lateref = useRef();
+  const countref = useRef();
   const handleScroll = () => {
       const position = window.pageYOffset;
-      if(position > ref.current.offsetTop - 200){
+      if(position > lateref.current.offsetTop - 200){
         setLatest(true)
+      }
+      if(position > countref.current.offsetTop - 500){
+        setCount(true)
       }
   };
   
@@ -85,16 +90,15 @@ From the arched and overhanging rigging, where they had just been engaged securi
     </div>
 
 
-    <div className={styles.about_box}>
+    <div className={styles.about_box} ref={countref}>
      
-
-      <ProgressBar/>
+      {count ?  <ProgressBar/> : ""}
       
     </div>
     </div>
 
 
-    <div className={styles.LATEST} ref={ref}>
+    <div className={styles.LATEST} ref={lateref}>
         <img src="https://www.pirenko-themes.com/hook/architecture/wp-content/uploads/sites/19/2016/06/draken.jpg" alt="img" />
         <div className={styles.latestachievments}>
           <h1>LATEST ACHIEVMENTS</h1>

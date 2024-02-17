@@ -7,8 +7,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-
-
+import "../App.css"
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
@@ -17,14 +16,14 @@ const  ServiceSlider = () => {
 
   return (
     <>
-      {/* <Swiper
+      <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
         }}
         spaceBetween={10}
         navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
+        thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
@@ -58,7 +57,7 @@ const  ServiceSlider = () => {
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
         </SwiperSlide>
-      </Swiper> */}
+      </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
