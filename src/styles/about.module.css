@@ -109,24 +109,24 @@
     font-weight: 900;
     color: white;
     animation-name: GoChevronDown;
-    animation-duration: 2s;
-    animation-delay: 4s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 @keyframes GoChevronDown {
-    0% ,100%{
-        top: 10px;
+    0% {
+        top: -5px;
     }
     25%{
-        top: 5px;
+        top:0px;
     }
     50%{
-        top: 10px;
-    }
-   75%{
         top: 15px;
+    } 
+   75%{
+        top: 0px;
     }
+    100%{top:-5px;} 
 }
 
 .about_contaner{

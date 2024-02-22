@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from '../styles/about.module.css'
 import { FaChevronDown,FaRegHeart } from "react-icons/fa";
 import { CgTime } from "react-icons/cg";
@@ -21,7 +21,7 @@ const About = () => {
       if(position > lateref.current.offsetTop - 200){
         setLatest(true)
       }
-      if(position > countref.current.offsetTop - 500){
+      if(position > countref.current.offsetTop - 640){
         setCount(true)
       }
   };

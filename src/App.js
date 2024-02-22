@@ -4,13 +4,15 @@ import About from "./pages/About.jsx";
 
 import "./App.css"
 import ServiceSlider from "./components/ServiceSlider.jsx";
+import Work from "./components/work.jsx";
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Home/>
       <About/>
-      <ServiceSlider/>
+      <Work/>
+      {/* <ServiceSlider/> */}
     </div>
 
   
