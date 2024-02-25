@@ -15,3 +15,48 @@
     text-align: center;
     font-family: Hind,sans-serif;
 }
+.table{
+    list-style: none;
+    text-decoration: none;
+    background-color: blueviolet;
+    width: 100%;
+
+}
+.table ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.table ul li{
+    list-style: none;
+    text-decoration: none;
+    background-color: azure;
+}
+.table ul li:nth-child(1){
+    background-color: cadetblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.table ul li:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.table ul li:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.table ul li:nth-child(4){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.table ul li:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.table ul li:nth-child(6){
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
