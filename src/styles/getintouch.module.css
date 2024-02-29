@@ -1,0 +1,83 @@
+.getintouch{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 0;
+}
+.get{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.get p{
+   max-width: 700px; 
+   width: 100%;
+   font-family: 'hind', sans-serif;
+
+}
+.get h1{
+    font-size: 50px;
+}
+.ourProject h4{
+    font-size: 18px;
+    color: #E08221;
+    text-decoration: underline #E08221;
+}
+.getContact{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 0 180px; */
+}
+.getContact .box{
+    text-align: center;
+}
+.getContact .box i{
+    font-size: 45px;
+    color: #E08221;
+}
+.getContact .box h3{
+    font-size: 20px;
+}
+.getContact .box p{
+    max-width: 150px; 
+    width: 100%;
+    font-family: 'Hind', sans-serif;
+
+}
+
+@media screen and (max-width:768px){
+    .getintouch{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 0;
+    }  
+    .get h1{
+        font-size: 40px;
+    }
+    .getContact{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    } 
+    .getContact .box{
+        text-align: center;
+    }
+    .getContact .box i{
+        font-size: 40px;
+        color: #E08221;
+    }
+    .getContact .box h3{
+        font-size: 18px;
+    }
+    .getContact .box p{
+        max-width: 150px; 
+        width: 100%;
+        font-family: 'Hind', sans-serif;
+    }
+}
