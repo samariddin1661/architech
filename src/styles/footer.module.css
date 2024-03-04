@@ -1,0 +1,35 @@
+.footer{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+.footerBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerItem{
+    width: 100%;
+    max-width: 280px;
+}
+.footerItem p span{
+    display: flex;
+    gap: 10px;
+    line-height: 25px;
+}
+.footerItem input{
+    width: 100%;
+    background-color: transparent;
+    outline:none;
+    padding: 5px;
+    border: 1px solid rgb(61, 61, 61);;
+}
+.footerItem button{
+    padding: 8px 30px;
+    background-color: goldenrod;
+    color: white;
+    outline: none;
+    letter-spacing: 3px;
+    margin: 10px;
+}
