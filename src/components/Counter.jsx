@@ -11,7 +11,7 @@ const Counter = (props) => {
         <CountUp 
         end={endNum} 
         start={startNum}
-        duration={10}
+        duration={5}
         />
     </div>
   )

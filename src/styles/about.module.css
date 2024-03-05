@@ -231,6 +231,9 @@
     width: 100%;
     font-size: 15px;
     color: white;
+    font-family: Hind, sans-serif;
+    font-weight: 100;
+
 }
 .latest_statistics{
     display: flex;
@@ -395,5 +398,31 @@
     .about_box4::after{
         width: 225px;
     }
+    .latest_statistics{
+        flex-direction: column;
+        gap: 20px;
 
+    }
+    .LATEST img{
+        width: 100%;
+        height: 850px;
+    }
+    .latestachievments{
+        top: 15%;
+    }
+    .latestachievments h1{
+        font-size: 32px;
+    }
+    .latest_statistics .statistics i{
+        font-size: 35px;
+        color: white;
+    }
+    .latest_statistics .statistics h1{
+        font-size:30px;
+        color: white;
+    }
+    .latest_statistics .statistics p{
+        font-size:20px;
+        color: white;
+    }
 }

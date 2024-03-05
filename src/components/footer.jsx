@@ -48,19 +48,23 @@ const Footer = () => {
 
                 <div className={footer.footerItem}>
                     <h4>INSTAGRAM FEED</h4>
-                    <div className={footer.footerimg}>
+                    <span className={footer.footerimg}>
                         <a href=""><img src={FooterImg1} alt="" /></a>
                         <a href=""><img src={FooterImg2} alt="" /></a>
                         <a href=""><img src={FooterImg3} alt="" /></a>
 
-                    </div>
-                    <div className={footer.footerimg}>                        
+                    </span>
+                    <span className={footer.footerimg}>                        
                         <a href=""><img src={FooterImg4} alt="" /></a>
                         <a href=""><img src={FooterImg5} alt="" /></a>
                         <a href=""><img src={FooterImg6} alt="" /></a>
-                    </div>
+                    </span>
 
                 </div>
+            </div>
+            <div className={footer.footerbottom}>
+                <p>Hook WordPress Theme</p>
+                <p>Developed with Love & Pride by Pirenko.</p>
             </div>
            <div>
             
