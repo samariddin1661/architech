@@ -1,15 +1,14 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-const Loader = lazy(()=>import("./components/Loader"))
+import Loader from './components/Loader';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
   <React.StrictMode>
     <Suspense fallback={<Loader/>}>
-      <App />
+    <App />
     </Suspense>
   </React.StrictMode>
 );
